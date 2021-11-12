@@ -1,25 +1,29 @@
-html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-/** typography **/
-
 :root {
     --orange: #f15e3a;
     --navy: #08303e;
     --gray-light: #ededed;
     --gray: #939ca4;
     --gray-dark: #6d6d6d;
+    --gray-black: #2b2728;
     --white: #fff;
-    --black: #2b2728;
+    --black: #333333;
     --font-heading: "Oswald", sans-serif;
     --font-sans-serif: "Karla", sans-serif;
     --font-about: "Helvetica", sans-serif;
 }
 
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 body {
     font-family: var(--font-sans-serif);
+    color: var(--black);
+}
+
+a {
+    color: var(--black);
 }
