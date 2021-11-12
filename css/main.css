@@ -19,11 +19,39 @@ html {
     box-sizing: inherit;
   }
 
+/** typography **/
+
 body {
     font-family: var(--font-sans-serif);
     color: var(--black);
 }
 
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 a {
     color: var(--black);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/** components **/
+
+.component img {
+    max-width: initial;
+}
+
+.component__img {
+    border: 1px solid var(--gray-black);
+    overflow-x: auto; 
+}
+
+.component__code {
+    border: 1px solid var(--gray-black);
 }
