@@ -1,5 +1,6 @@
 :root {
     --orange: #f15e3a;
+    --orange-dark: #ff4612;
     --navy: #08303e;
     --gray-light: #ededed;
     --gray: #939ca4;
@@ -24,6 +25,8 @@ html {
 body {
     font-family: var(--font-sans-serif);
     color: var(--black);
+    line-height: 1.67rem;
+    font-size: 1rem;
 }
 
 h1, h2, h3 {
@@ -54,4 +57,28 @@ img {
 
 .component__code {
     border: 1px solid var(--gray-black);
+}
+
+.main {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--orange-dark);
+    font-size: 1.4rem;
+}
+
+.main-nav {
+    color: var(--white);
+    background-color: var(--orange);
+    font-size: medium;
+}
+
+.main__table {
+    color: var(--navy);
+    font-size: 1.6rem;
+}
+
+.menu {
+    font-style: italic;
+    color: var(--gray-dark);
 }
