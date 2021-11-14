@@ -65,20 +65,32 @@ img {
     font-weight: 700;
     color: var(--orange-dark);
     font-size: 1.4rem;
+    letter-spacing: 1px;
 }
 
 .main-nav {
     color: var(--white);
     background-color: var(--orange);
     font-size: medium;
+    letter-spacing: 1px;
 }
 
 .main__table {
     color: var(--navy);
     font-size: 1.6rem;
+    letter-spacing: 1px;
 }
 
 .menu {
     font-style: italic;
     color: var(--gray-dark);
+}
+
+.menu__item-description {
+    max-width: 275px;
+    line-height: 1.4rem;
+}
+
+.footer {
+    max-width: 275px;
 }
