@@ -59,6 +59,14 @@ img {
     border: 1px solid var(--gray-black);
 }
 
+.header {
+    color: var(--white);
+    background-color: var(--orange);
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
 .main {
     font-family: var(--font-heading);
     text-transform: uppercase;
@@ -66,6 +74,10 @@ img {
     color: var(--orange-dark);
     font-size: 1.4rem;
     letter-spacing: 1px;
+}
+
+.main__heading {
+    font-size: 1.1rem;
 }
 
 .main-nav {
@@ -93,4 +105,8 @@ img {
 
 .footer {
     max-width: 275px;
+}
+
+.footer__section-heading {
+    font-size: 1.1rem;
 }
