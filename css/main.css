@@ -3,6 +3,7 @@
     --orange-dark: #ff4612;
     --navy: #08303e;
     --gray-light: #ededed;
+    --gray-light2: #c0bebe;
     --gray: #939ca4;
     --gray-dark: #6d6d6d;
     --gray-black: #2b2728;
@@ -134,6 +135,11 @@ img {
     letter-spacing: 1px;
 }
 
+.img-carousel__button--left {
+    background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/arrows_orb.png);
+    background-repeat: no-repeat;
+}
+
 .menu {
     font-style: italic;
     color: var(--gray-dark);
@@ -157,8 +163,17 @@ img {
     max-width: 275px;
 }
 
+.footer__icon--top {
+    width: 540px;
+}
 .footer__section-heading {
     font-size: 1.1rem;
+}
+
+.footer__icon {
+    color: var(--gray-light2);
+    font-size: 1.5rem;
+    display: inline block;
 }
 
 .footer__section--link {
