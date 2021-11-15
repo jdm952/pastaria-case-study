@@ -138,6 +138,18 @@ img {
 .img-carousel__button--left {
     background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/arrows_orb.png);
     background-repeat: no-repeat;
+    background-position: top right;
+    padding: 1.8rem 1.8rem 2rem 2rem;
+    display: block;
+    width: 61px;
+}
+
+.img-carousel__button--right {
+    background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/arrows_orb.png);
+    background-repeat: no-repeat;
+    padding: 1.8rem;
+    display: block;
+    width: 61px;
 }
 
 .menu {
