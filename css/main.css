@@ -36,6 +36,10 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
 a {
     color: var(--black);
 }
@@ -43,6 +47,18 @@ a {
 img {
     max-width: 100%;
     display: block;
+}
+
+/** components page settings **/
+
+.component-page {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: var(--gray-light);
+}
+
+.sidebar-nav a {
+    text-decoration: none;
 }
 
 /** components **/

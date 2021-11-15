@@ -11,75 +11,97 @@
     <script src="https://kit.fontawesome.com/adddfb2fc2.js" crossorigin="anonymous"></script>
     <title>Components - Pastaria</title>
 </head>
-<body>
-    <h1>Web Components</h1>
-    <p>This is a collection of components based on my study of the design system of the <a href="https://eatpastaria.com/stlouis/">Pastaria</a> website.</p>
-    <h2>Typography</h2>
-    <article class="component">
-        <h3 class="component__name">body (main-nav, home, menu, and footer sections)</h3>
-        <div class="component__img">
-            <img src="img/main-nav__list-item.png" alt="body copy" srcset="img/main-nav__list-item.png 2x">
-            <img src="img/main__list-item.png" alt="body copy" srcset="img/main__list-item.png 2x">
-            <img src="img/main__table-item.png" alt="body copy" srcset="img/main__table-item.png 2x">
-            <img src="img/main__body.png" alt="body copy" srcset="img/main__body.png 2x">
-            <img src="img/menu__section-item--description.png" alt="menu description" srcset="img/menu__section-item--description.png 2x">
-            <img src="img/footer__section.png" alt="body copy" srcset="img/footer__section.png 2x">
-        </div>
-        <div class="component__code">
-            <p class="main main-nav">Home</p>
-            <p class="main">Order Online</p>
-            <p class="main main__table">Wednesday &#8211; Monday</p>
-            <p>Book now on <a href="#">Tock.</a></p>
-            <p class="menu menu__item-description">with braised kale, garlic croutons, lemon, capers, white wine</p>
-            <p class="footer">Your favorite Pastaria dishes are now available for delivery by DoorDash.</p>
-        </div>
-    </article>
-    <article class="component">
-        <h3 class="component__name">headings (h1, h2, h3...)</h3>
-        <div class="component__img">
-            <img src="img/header__nav-item--white.png" alt="header" srcset="img/header__nav-item--white.png 2x">
-            <img src="img/section__heading--hours.png" alt="header" srcset="img/section__heading--hours.png 2x">
-            <img src="img/main__heading--orange.png" alt="header" srcset="img/main__heading--orange.png 2x">
-            <img src="img/footer__section-heading.png" alt="header" srcset="img/footer__section-heading.png 2x">
-        </div>
-        <div class="component__code">
-            <h2 class="header header__nav-item">St. Louis</h2>
-            <h2 class="section__heading">Hours</h2>
-            <h3 class="main main__heading">Now accepting reservations!</h3>
-            <h4 class="footer__section-heading">Delicious food, delivered.</h4>
-        </div>
-    </article>
-    <article class="component">
-        <h3 class="component__name">links</h3>
-        <div class="component__img">
-            <img src="img/link--main__link.png" alt="link" srcset="img/link--main__link.png 2x">
-            <img src="img/link--main__link-button.png" alt="link" srcset="img/link--main__link-button.png 2x">
-            <img src="img/link--menu__heading.png" alt="link" srcset="img/link--menu__heading.png 2x">
-            <img src="img/link--footer__section--link.png" alt="link" srcset="img/link--footer__section--link.png 2x">
-        </div>
-        <div class="component__code">
-            <p><a href="#" class="main main__link">Email us!</a></p>
-            <p><a href="#" class="main main__link-button"><span class="main__link-button-heading">Pastaria Deli & Wine.</span> Sandwiches, provisions, wine shop, and more.</a></p>
-            <p><a href="#" class="menu menu__heading">Here</a></p>
-            <p><a href="#" class="footer__section--link">Order now.</a></p>
-        </div>
-    </article>
-    <article class="component">
-        <h3 class="component__name">icons</h3>
-        <div class="component__img">
-            <img src="img/img-carousel__button--left.png" alt="icon" srcset="img/img-carousel__button--left.png 2x">
-            <img src="img/img-carousel__button--right.png" alt="icon" srcset="img/img-carousel__button--right.png 2x">
-            <img src="img/icon--footer__icon--top.png" alt="icon" srcset="img/icon--footer__icon--top.png 2x">
-            <img src="img/icon--footer__icon-list--item.png" alt="icon" srcset="img/icon--footer__icon-list--item.png 2x">
-        </div>
-        <div class="component__code">
-            <p><a href="#" class="img-carousel__button--left"><span hidden>Next</span></a></p>
-            <p><a href="#" class="img-carousel__button--right"><span hidden>Next</span></a></p>
-            <img class="footer__icon--top" src="img/icon--footer__icon--top.png" alt="footer heading image">
-            <p><a href="#" class="footer__icon"><i class="fab fa-facebook-f"></i></a></p>
-            <p><a href="#" class="footer__icon"><i class="fab fa-twitter"></i></a></p>
-            <p><a href="#" class="footer__icon"><i class="fab fa-instagram"></i></a></p>
-        </div>
-    </article>
+<body class="component-page">
+    <header>
+        <h1>Pastaria</h1>
+        <nav class="sidebar-nav">
+            <section class="sidebar-nav__section">
+                <h2 class="sidebar-nav__heading"><a href="#typography">Typography</a></h2>
+                <ul class="sidebar-nav__list">
+                    <li><a href="#body">Body</a></li>
+                    <li><a href="#headings">Headings</a></li>
+                    <li><a href="#links">Links</a></li>
+                </ul>
+            </section>
+            <section class="sidebar-nav__section">
+                <h2 class="sidebar-nav__heading"><a href="#images">Images</a></h2>
+                <ul class="sidebar-nav__list">
+                    <li><a href="#icons">Icons</a></li>
+                    <li><a href="#images">Images</a></li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+    <section class="components">
+        <h1>Web Components</h1>
+        <p>This is a collection of components based on my study of the design system of the <a href="https://eatpastaria.com/stlouis/">Pastaria</a> website.</p>
+        <h2 id="typography">Typography</h2>
+        <article class="component">
+            <h3 id="body" class="component__name">body (main-nav, home, menu, and footer sections)</h3>
+            <div class="component__img">
+                <img src="img/main-nav__list-item.png" alt="body copy" srcset="img/main-nav__list-item.png 2x">
+                <img src="img/main__list-item.png" alt="body copy" srcset="img/main__list-item.png 2x">
+                <img src="img/main__table-item.png" alt="body copy" srcset="img/main__table-item.png 2x">
+                <img src="img/main__body.png" alt="body copy" srcset="img/main__body.png 2x">
+                <img src="img/menu__section-item--description.png" alt="menu description" srcset="img/menu__section-item--description.png 2x">
+                <img src="img/footer__section.png" alt="body copy" srcset="img/footer__section.png 2x">
+            </div>
+            <div class="component__code">
+                <p class="main main-nav">Home</p>
+                <p class="main">Order Online</p>
+                <p class="main main__table">Wednesday &#8211; Monday</p>
+                <p>Book now on <a href="#">Tock.</a></p>
+                <p class="menu menu__item-description">with braised kale, garlic croutons, lemon, capers, white wine</p>
+                <p class="footer">Your favorite Pastaria dishes are now available for delivery by DoorDash.</p>
+            </div>
+        </article>
+        <article class="component">
+            <h3 id="headings" class="component__name">headings (h1, h2, h3...)</h3>
+            <div class="component__img">
+                <img src="img/header__nav-item--white.png" alt="header" srcset="img/header__nav-item--white.png 2x">
+                <img src="img/section__heading--hours.png" alt="header" srcset="img/section__heading--hours.png 2x">
+                <img src="img/main__heading--orange.png" alt="header" srcset="img/main__heading--orange.png 2x">
+                <img src="img/footer__section-heading.png" alt="header" srcset="img/footer__section-heading.png 2x">
+            </div>
+            <div class="component__code">
+                <h2 class="header header__nav-item">St. Louis</h2>
+                <h2 class="section__heading">Hours</h2>
+                <h3 class="main main__heading">Now accepting reservations!</h3>
+                <h4 class="footer__section-heading">Delicious food, delivered.</h4>
+            </div>
+        </article>
+        <article class="component">
+            <h3 id="links" class="component__name">links</h3>
+            <div class="component__img">
+                <img src="img/link--main__link.png" alt="link" srcset="img/link--main__link.png 2x">
+                <img src="img/link--main__link-button.png" alt="link" srcset="img/link--main__link-button.png 2x">
+                <img src="img/link--menu__heading.png" alt="link" srcset="img/link--menu__heading.png 2x">
+                <img src="img/link--footer__section--link.png" alt="link" srcset="img/link--footer__section--link.png 2x">
+            </div>
+            <div class="component__code">
+                <p><a href="#" class="main main__link">Email us!</a></p>
+                <p><a href="#" class="main main__link-button"><span class="main__link-button-heading">Pastaria Deli & Wine.</span> Sandwiches, provisions, wine shop, and more.</a></p>
+                <p><a href="#" class="menu menu__heading">Here</a></p>
+                <p><a href="#" class="footer__section--link">Order now.</a></p>
+            </div>
+        </article>
+        <article class="component">
+            <h3 id="icons" class="component__name">icons</h3>
+            <div class="component__img">
+                <img src="img/img-carousel__button--left.png" alt="icon" srcset="img/img-carousel__button--left.png 2x">
+                <img src="img/img-carousel__button--right.png" alt="icon" srcset="img/img-carousel__button--right.png 2x">
+                <img src="img/icon--footer__icon--top.png" alt="icon" srcset="img/icon--footer__icon--top.png 2x">
+                <img src="img/icon--footer__icon-list--item.png" alt="icon" srcset="img/icon--footer__icon-list--item.png 2x">
+            </div>
+            <div class="component__code">
+                <p><a href="#" class="img-carousel__button--left"><span hidden>Next</span></a></p>
+                <p><a href="#" class="img-carousel__button--right"><span hidden>Next</span></a></p>
+                <img class="footer__icon--top" src="img/icon--footer__icon--top.png" alt="footer heading image">
+                <p><a href="#" class="footer__icon"><i class="fab fa-facebook-f"></i></a></p>
+                <p><a href="#" class="footer__icon"><i class="fab fa-twitter"></i></a></p>
+                <p><a href="#" class="footer__icon"><i class="fab fa-instagram"></i></a></p>
+            </div>
+        </article>
+    </section>
 </body>
 </html>
