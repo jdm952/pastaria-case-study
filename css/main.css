@@ -28,6 +28,9 @@ body {
     color: var(--black);
     line-height: 1.67rem;
     font-size: 1rem;
+    padding: 0;
+    margin: 0;
+
 }
 
 h1, h2, h3 {
@@ -57,8 +60,26 @@ img {
     background-color: var(--gray-light);
 }
 
+header {
+    background-color: var(--orange);
+    padding: 1rem;
+}
+
+.sidebar-nav__heading {
+    padding-top: 2rem;
+}
+
 .sidebar-nav a {
     text-decoration: none;
+    color: var(--white);
+}
+
+.sidebar-nav__list {
+    list-style: none;
+    padding-left: 0;
+}
+.components {
+    padding: 2.8rem 1rem 1rem;
 }
 
 /** components **/
