@@ -56,13 +56,20 @@ img {
 
 .component-page {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 18rem minmax(0, 1fr);
+    grid-template-areas: "header main";
     background-color: var(--gray-light);
 }
 
 header {
     background-color: var(--orange);
     padding: 1rem 2rem;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 18rem;
 }
 
 .sidebar-nav__heading {
@@ -80,6 +87,9 @@ header {
 }
 .components {
     padding: 2.8rem 1rem 1rem;
+    display: block;
+    grid-area: main;
+
 }
 
 /** components **/
