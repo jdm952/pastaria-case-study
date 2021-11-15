@@ -56,13 +56,13 @@ img {
 
 .component-page {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 4fr;
     background-color: var(--gray-light);
 }
 
 header {
     background-color: var(--orange);
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 .sidebar-nav__heading {
