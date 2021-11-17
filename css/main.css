@@ -137,14 +137,24 @@ header {
 }
 
 .main__link-button {
+    display: block;
+    background: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/icon-arrow.gif) no-repeat 97% 50% transparent;
     background-color: var(--navy);
     color: var(--white);
     text-decoration: none;
     font-size: 1rem;
     font-family: var(--font-sans-serif);
     text-transform: none;
+    text-align: center;
     font-weight: 400;
-    padding: .6rem;
+    padding: .5rem 2rem .5rem 0;
+    margin: 0;
+    width: 50%;
+    transition: all 0.5s ease;
+}
+
+.main__link-button:hover {
+    background-position: 98% 50%;
 }
 
 .main__heading {
@@ -215,10 +225,11 @@ header {
 
 .img-carousel__button {
     cursor: pointer;
+    width: auto;
+    /** remove for components site
     position: absolute;
     top: 50%;
-    width: auto;
-    margin-top: -22px;
+    margin-top: -22px; **/
     padding: 16px;
     transition: 0.6s ease;
     user-select: none;
