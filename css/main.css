@@ -103,13 +103,16 @@ header {
     overflow-x: auto; 
 }
 
+.component__img .component__img-small {
+    max-width: 100%;
+}
+
 .component__code {
     border: 1px solid var(--gray-black);
 }
 
 .header {
     color: var(--white);
-    background-color: var(--orange);
     letter-spacing: 1px;
     font-size: 1.8rem;
     line-height: 2.5rem;
@@ -162,7 +165,6 @@ header {
 
 .main-nav {
     color: var(--white);
-    background-color: var(--orange);
     font-size: medium;
     letter-spacing: 1px;
 }
@@ -182,6 +184,46 @@ header {
     letter-spacing: 1px;
 }
 
+.img-carousel {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    height: 790px;
+}
+
+.img-carousel__img {
+    display: none;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.img-carousel__button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
 .img-carousel__button--left {
     background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/arrows_orb.png);
     background-repeat: no-repeat;
@@ -197,6 +239,11 @@ header {
     padding: 1.8rem;
     display: block;
     width: 61px;
+    right: 0;
+}
+
+.img-carousel__button--right:hover {
+    top: 0;
 }
 
 .menu {

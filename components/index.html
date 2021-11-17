@@ -9,6 +9,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;700&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/adddfb2fc2.js" crossorigin="anonymous"></script>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("img-carousel");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+        
     <title>Components - Pastaria</title>
 </head>
 <body class="component-page">
@@ -142,12 +164,33 @@
                 <img src="img/icon--footer__icon-list--item.png" alt="icon" srcset="img/icon--footer__icon-list--item.png 2x">
             </div>
             <div class="component__code">
-                <p><a href="#" class="img-carousel__button--left"><span hidden>Next</span></a></p>
-                <p><a href="#" class="img-carousel__button--right"><span hidden>Next</span></a></p>
+                <p><a href="#" class="img-carousel__button img-carousel__button--left"><span hidden>Next</span></a></p>
+                <p><a href="#" class="img-carousel__button img-carousel__button--right"><span hidden>Next</span></a></p>
                 <img class="footer__icon--top" src="img/icon--footer__icon--top.png" alt="footer heading image">
                 <p><a href="#" class="footer__icon"><i class="fab fa-facebook-f"></i></a></p>
                 <p><a href="#" class="footer__icon"><i class="fab fa-twitter"></i></a></p>
                 <p><a href="#" class="footer__icon"><i class="fab fa-instagram"></i></a></p>
+            </div>
+        </article>
+        <article class="component">
+            <h3 id="carousel" class="component__name">Image Carousel</h3>
+            <div class="component__img component__img-small">
+                <img src="img/img-carousel2.png" alt="image carousel" srcset="img/img-carousel2.png 3x">
+            </div>
+            <div class="component__code">
+                <div class="img-carousel fade">
+                    <div class="img-carousel__img fade"></div><img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Dishes1.jpg"></div>
+                    <div class="img-carousel__img fade"><img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Gelato.jpg"></div>
+                    <div class="img-carousel__img fade"><img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Dishes1.jpg"></div>
+                    <div class="img-carousel__img fade"><img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Peppporoni.jpg"></div>
+                    <div class="img-carousel__img fade"><img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2012/10/Family.jpg"></div>
+                    <div class="img-carousel__img fade"><img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Ramen.jpg"></div>
+                    <div class="img-carousel__img fade"><img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/RisotoBalls.jpg"></div>
+                    <div class="img-carousel__img fade"><img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Salmon.jpg"></div>
+                    <div class="img-carousel__img fade"><img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/TheHolmes.jpg"></div>
+                    <a class="img-carousel__button img-carousel__button--left" onclick="plusSlides(-1)"><span hidden>Next</span></a>
+                    <a class="img-carousel__button img-carousel__button--right" onclick="plusSlides(1)"><span hidden>Next</span></a>
+                </div>
             </div>
         </article>
     </section>
