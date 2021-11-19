@@ -43,6 +43,11 @@ h1 {
     font-size: 2.5rem;
 }
 
+h2 {
+    padding: 2rem 0 0;
+    font-size: 1.7rem;
+}
+
 a {
     color: var(--black);
 }
@@ -89,7 +94,10 @@ header {
     padding: 2.8rem 1rem 1rem;
     display: block;
     grid-area: main;
+}
 
+.components__section {
+    display: contents;
 }
 
 /** components **/
@@ -123,8 +131,14 @@ header {
     text-transform: uppercase;
     font-weight: 700;
     color: var(--orange-dark);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     letter-spacing: 1px;
+}
+
+.main__card {
+    background-color: var(--white);
+    padding: .5rem;
+    max-width: fit-content;
 }
 
 .main__link {
@@ -149,7 +163,7 @@ header {
     font-weight: 400;
     padding: .5rem 2rem .5rem 0;
     margin: 0;
-    width: 50%;
+    width: 65%;
     transition: all 0.5s ease;
 }
 
