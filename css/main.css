@@ -4,6 +4,7 @@
     --navy: #08303e;
     --gray-light: #ededed;
     --gray-light2: #c0bebe;
+    --gray-header: #dcdce0;
     --gray: #939ca4;
     --gray-dark: #6d6d6d;
     --gray-black: #2b2728;
@@ -126,6 +127,38 @@ header {
     line-height: 2.5rem;
 }
 
+.header__nav {
+    display: flex;
+    align-items: center;
+    font-size: 1.9rem;
+}
+
+.header__nav-item {
+    background-color: var(--orange);
+    flex-grow: 1;
+    padding: 2rem 10rem;
+}
+
+.header__nav-item-gray {
+    color: var(--gray);
+    display: inline;
+    padding-left: 2rem;
+}
+
+.header__nav-item--white {
+    display: inline;
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+}
+
+.nashville {
+    display: block;
+    background-color: var(--gray-header);
+    flex-grow: 1;
+    padding: 2rem 10rem;
+}
 .main {
     font-family: var(--font-heading);
     text-transform: uppercase;
