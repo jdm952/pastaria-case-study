@@ -5,6 +5,7 @@
     --gray-light: #ededed;
     --gray-light2: #c0bebe;
     --gray-header: #dcdce0;
+    --gray-contact: #b2b2b2;
     --gray: #939ca4;
     --gray-dark: #6d6d6d;
     --gray-black: #2b2728;
@@ -208,13 +209,31 @@ header {
 .list--employment {
     padding-left: 2.6rem;
 }
+.main__card-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    width: 380px; /** remove width on final project page **/
+}
 
 .main__card {
     background-color: var(--white);
     padding: .5rem;
     max-width: fit-content;
+    font-size: 1.4rem;
+    margin: .1rem;
 }
 
+.main__card--navy {
+    color: var(--navy);
+    font-size:1.12rem;
+}
+
+.main__card--gray {
+    color: var(--gray-contact);
+    font-size: 1rem;
+}
 .main__link {
     text-transform: none;
     font-family: var(--font-sans-serif);
@@ -277,9 +296,18 @@ header {
 }
 
 .main__table {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    width: 350px; /** remove width on final project page **/
+}
+
+.main__table-item {
     color: var(--navy);
     font-size: 1.6rem;
     letter-spacing: 1px;
+    margin: .7rem;
 }
 
 .img-carousel {
