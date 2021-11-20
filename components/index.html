@@ -88,7 +88,7 @@
         <section class="components components__section">
             <h2 id="typography">Typography</h2>
             <article class="component">
-                <h3 id="body" class="component__name">body (main-nav, home, menu, and footer sections)</h3>
+                <h3 id="body" class="component__name">Body (main-nav, home, menu, and footer sections)</h3>
                 <div class="component__img">
                     <img src="img/main-nav__list-item.png" alt="body copy" srcset="img/main-nav__list-item.png 2x">
                     <img src="img/main__list-item.png" alt="body copy" srcset="img/main__list-item.png 2x">
@@ -107,7 +107,7 @@
                 </div>
             </article>
             <article class="component">
-                <h3 id="headings" class="component__name">headings (h1, h2, h3...)</h3>
+                <h3 id="headings" class="component__name">Headings (h1, h2, h3...)</h3>
                 <div class="component__img">
                     <img src="img/header__nav-item--white.png" alt="header" srcset="img/header__nav-item--white.png 2x">
                     <img src="img/section__heading--hours.png" alt="header" srcset="img/section__heading--hours.png 2x">
@@ -141,7 +141,7 @@
         <section class="components components__section">
             <h2 id="images">Images</h2>
             <article class="component">
-                <h3 id="icons" class="component__name">icons</h3>
+                <h3 id="icons" class="component__name">Icons</h3>
                 <div class="component__img">
                     <img src="img/icon--footer__icon--top.png" alt="icon" srcset="img/icon--footer__icon--top.png 2x">
                     <img src="img/icon--footer__icon-list.png" alt="icon" srcset="img/icon--footer__icon-list.png 2x">
@@ -157,8 +157,8 @@
                 <h3 id="buttons" class="component__name">Buttons</h3>
                 <div class="component__img">
                     <img src="img/link--main__link-button.png" alt="link" srcset="img/link--main__link-button.png 2x">
-                    <img src="img/img-carousel__button--left.png" alt="icon" srcset="img/img-carousel__button--left.png 2x">
-                    <img src="img/img-carousel__button--right.png" alt="icon" srcset="img/img-carousel__button--right.png 2x">
+                    <img src="img/img-carousel__button--left.png" alt="button" srcset="img/img-carousel__button--left.png 2x">
+                    <img src="img/img-carousel__button--right.png" alt="button" srcset="img/img-carousel__button--right.png 2x">
                 </div>
                 <div class="component__code">
                     <p><a href="#" class="main main__link-button"><span class="main__link-button-heading">Pastaria Deli & Wine.</span> Sandwiches, provisions, wine shop, and more.</a></p>
@@ -172,18 +172,76 @@
                     <img src="img/img-carousel2.png" alt="image carousel" srcset="img/img-carousel2.png 3x">
                 </div>
                 <div class="component__code">
-                    <div class="img-carousel fade">
-                        <div class="img-carousel__img fade"></div><img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Dishes1.jpg"></div>
-                        <div class="img-carousel__img fade"><img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Gelato.jpg"></div>
-                        <div class="img-carousel__img fade"><img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Dishes1.jpg"></div>
-                        <div class="img-carousel__img fade"><img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Peppporoni.jpg"></div>
-                        <div class="img-carousel__img fade"><img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2012/10/Family.jpg"></div>
-                        <div class="img-carousel__img fade"><img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Ramen.jpg"></div>
-                        <div class="img-carousel__img fade"><img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/RisotoBalls.jpg"></div>
-                        <div class="img-carousel__img fade"><img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Salmon.jpg"></div>
-                        <div class="img-carousel__img fade"><img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/TheHolmes.jpg"></div>
-                        <a class="img-carousel__button img-carousel__button--left" onclick="plusSlides(-1)"><span hidden>Next</span></a>
-                        <a class="img-carousel__button img-carousel__button--right" onclick="plusSlides(1)"><span hidden>Next</span></a>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 9</div>
+                            <img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Dishes1.jpg" alt="dishes" style="width:100%">
+                            <div class="text">Caption Text</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 9</div>
+                            <img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Gelato.jpg" alt="gelato" style="width:100%">
+                            <div class="text">Caption Text</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 9</div>
+                            <img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Peppporoni.jpg" alt="pepperoni pizza" style="width:100%">
+                            <div class="text">Caption Text</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 9</div>
+                            <img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2012/10/Family.jpg" alt="family at table" style="width:100%">
+                            <div class="text">Caption Text</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 9</div>
+                            <img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Ramen.jpg" alt="ramen" style="width:100%">
+                            <div class="text">Caption Text</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">6 / 9</div>
+                            <img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/RisotoBalls.jpg" alt="risotto balls" style="width:100%">
+                            <div class="text">Caption Text</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">7 / 9</div>
+                            <img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Salmon.jpg" alt="salmon" style="width:100%">
+                            <div class="text">Caption Text</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">8 / 9</div>
+                            <img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/TheHolmes.jpg" alt="pizza" style="width:100%">
+                            <div class="text">Caption Text</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">9 / 9</div>
+                            <img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2012/10/Interior2.jpg" alt="inside restaurant" style="width:100%">
+                            <div class="text">Caption Text</div>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                        <span class="dot" onclick="currentSlide(8)"></span>
+                        <span class="dot" onclick="currentSlide(9)"></span>
                     </div>
                 </div>
             </article>
@@ -398,25 +456,33 @@
     </section>
 
     <script>
-        var slideIndex = 0;
-        showSlides();
+        var slideIndex = 1;
+        showSlides(slideIndex);
         
-        function showSlides() {
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
           var i;
-          var slides = document.getElementsByClassName("img-carousel");
+          var slides = document.getElementsByClassName("mySlides");
           var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
           for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
+              slides[i].style.display = "none";  
           }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
           for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+              dots[i].className = dots[i].className.replace(" active", "");
           }
           slides[slideIndex-1].style.display = "block";  
           dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 2000); // Change image every 2 seconds
         }
-    </script>
+        </script>
+        
 </body>
 </html>
