@@ -12,6 +12,8 @@
     --gray-menu-note: #7b7073;
     --gray-dark: #6d6d6d;
     --gray-black: #2b2728;
+    --gray-email: #a5a5a5;
+    --gray-email-back: #e7e7e7;
     --white: #fff;
     --black: #333333;
     --font-heading: "Oswald", sans-serif;
@@ -532,6 +534,12 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 
 .footer {
     max-width: 275px;
+    padding: 0;
+    margin: .5rem 0;
+}
+
+.footer__blurb {
+    max-width: 275px;
 }
 
 .footer__icon--top {
@@ -539,6 +547,7 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 }
 .footer__section-heading {
     font-size: 1.1rem;
+    margin: .8rem 0;
 }
 
 .footer__icon-list {
@@ -556,3 +565,59 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 .footer__section--link {
     color: var(--orange);
 }
+
+.newsletter__container {
+    padding: 1rem;
+}
+
+.newsletter {
+    width: 345px;
+    text-align: center;
+}
+
+.newsletter__heading {
+    color: var(--navy);
+    margin: 0;
+    font-size: 1rem;
+}
+
+.newsletter__subheading {
+    color: var(--gray-light2);
+    margin: 0;
+    font-size: 1rem;
+}
+
+.newsletter__text {
+    color: var(--gray-dark);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    margin: .2rem 0 2rem 0;
+}
+
+.email {
+    color: var(--gray-email);
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: var(--gray-email-back);
+    border: none;
+    display:inline-block;
+    width: 250px;
+    padding-left: .2rem;
+}
+
+.submit {
+    color: var(--white);
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: var(--orange);
+    border: none;
+    display: inline-block;
+    padding: 0 .6rem;
+}
+
+
