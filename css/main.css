@@ -453,6 +453,29 @@ background-color: #717171;
     display: none;
 }
 
+.menus__list {
+    letter-spacing: 1px;
+    font-size: .9rem;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+}
+
+.menus__list a {
+    text-decoration: none;
+    color: var(--gray-light2);
+}
+
+a .menus__list-active {
+    color: var(--navy);
+}
+
+a .menus__list-active:hover, a .menus__list-item:hover {
+    text-decoration: underline;
+}
+
 .menu {
     font-style: italic;
     color: var(--gray-dark);
