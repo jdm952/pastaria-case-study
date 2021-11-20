@@ -7,6 +7,9 @@
     --gray-header: #dcdce0;
     --gray-contact: #b2b2b2;
     --gray: #939ca4;
+    --gray-menu: #988b8f;
+    --gray-menu-outline:#d3d3d3;
+    --gray-menu-note: #7b7073;
     --gray-dark: #6d6d6d;
     --gray-black: #2b2728;
     --white: #fff;
@@ -286,8 +289,6 @@ header {
     padding-right: 1rem;
 }
 
-
-
 .section__heading {
     background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/orb-orange.png);
     background-repeat: no-repeat;
@@ -476,23 +477,57 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     text-decoration: underline;
 }
 
-.menu {
-    font-style: italic;
-    color: var(--gray-dark);
+.menu__section-note {
+    color: var(--gray-menu-note);
+    letter-spacing: 1px;
+    font-size: 1.1rem;
 }
 
-.menu__item-description {
-    max-width: 275px;
-    line-height: 1.4rem;
-}
-
-.menu__heading {
+.menu__section-note--link {
     font-family: var(--font-heading);
     font-weight: 700;
     text-transform: uppercase;
     font-style: normal;
     letter-spacing: 1px;
     color: var(--orange);
+    padding-left: 0;
+}
+
+.menu {
+    padding: 0 .8rem;
+    width: 295px;
+}
+
+.menu__section-outline {
+    border: 4px double var(--gray-menu-outline);
+}
+
+.menu__heading {
+    color: var(--gray-black);
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 1.5rem 0 .5rem 0;
+    line-height: 1.2;
+}
+
+.menu__item {
+    margin: .5rem 0;
+}
+
+.menu__item-name {
+    font-family: var(--font-sans-serif);
+    text-transform: none;
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.menu__item-description {
+    font-style: italic;
+    color: var(--gray-menu);
+    max-width: 275px;
+    line-height: 1.4rem;
+    margin: 0;
 }
 
 .footer {
@@ -504,6 +539,12 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 }
 .footer__section-heading {
     font-size: 1.1rem;
+}
+
+.footer__icon-list {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
 }
 
 .footer__icon {

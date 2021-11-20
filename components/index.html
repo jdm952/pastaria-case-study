@@ -102,7 +102,7 @@
                     <p class="main">Order Online</p>
                     <p class="main main__table-item">Wednesday &#8211; Monday</p>
                     <p>Book now on <a href="#">Tock.</a></p>
-                    <p class="menu menu__item-description">with braised kale, garlic croutons, lemon, capers, white wine</p>
+                    <p class="menu__item-description">with braised kale, garlic croutons, lemon, capers, white wine</p>
                     <p class="footer">Your favorite Pastaria dishes are now available for delivery by DoorDash.</p>
                 </div>
             </article>
@@ -112,12 +112,14 @@
                     <img src="img/header__nav-item--white.png" alt="header" srcset="img/header__nav-item--white.png 2x">
                     <img src="img/section__heading--hours.png" alt="header" srcset="img/section__heading--hours.png 2x">
                     <img src="img/main__heading--orange.png" alt="header" srcset="img/main__heading--orange.png 2x">
+                    <img src="img/menu__section-note.png" alt="header" srcset="img/menu__section-note.png 2x">
                     <img src="img/footer__section-heading.png" alt="header" srcset="img/footer__section-heading.png 2x">
                 </div>
                 <div class="component__code">
                     <h2 class="header">St. Louis</h2>
                     <h2 class="section__heading">Hours</h2>
                     <h3 class="main main__heading">Now accepting reservations!</h3>
+                    <h3 class="menu__section-note">Pick an entree and dessert for $12</h3>
                     <h4 class="footer__section-heading">Delicious food, delivered.</h4>
                 </div>
             </article>
@@ -126,13 +128,13 @@
                 <div class="component__img">
                     <img src="img/link--main__link.png" alt="link" srcset="img/link--main__link.png 2x">
                     <img src="img/link--main__link-button.png" alt="link" srcset="img/link--main__link-button.png 2x">
-                    <img src="img/link--menu__heading.png" alt="link" srcset="img/link--menu__heading.png 2x">
+                    <img src="img/link--menu__heading-link.png" alt="link" srcset="img/link--menu__heading.png 2x">
                     <img src="img/link--footer__section--link.png" alt="link" srcset="img/link--footer__section--link.png 2x">
                 </div>
                 <div class="component__code">
                     <p><a href="mailto:madi@nichestlouis.com" class="main main__link">Email us!</a></p>
                     <p><a href="#" class="main main__link-button"><span class="main__link-button-heading">Pastaria Deli & Wine.</span> Sandwiches, provisions, wine shop, and more.</a></p>
-                    <p><a href="#" class="menu menu__heading">Here</a></p>
+                    <p><a href="#" class="menu__section-note--link">Here</a></p>
                     <p><a href="#" class="footer__section--link">Order now.</a></p>
                 </div>
             </article>
@@ -148,9 +150,11 @@
                 </div>
                 <div class="component__code">
                     <img class="footer__icon--top" src="img/icon--footer__icon--top.png" alt="footer heading image">
-                    <p><a href="#" class="footer__icon"><i class="fab fa-facebook-f"></i></a></p>
-                    <p><a href="#" class="footer__icon"><i class="fab fa-twitter"></i></a></p>
-                    <p><a href="#" class="footer__icon"><i class="fab fa-instagram"></i></a></p>
+                    <div class="footer__icon-list">
+                        <a href="#" class="footer__icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__icon"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </article>
             <article class="component">
@@ -419,6 +423,17 @@
                         <img src="img/menu__section.png" alt="menu section" srcset="img/menu__section.png 2x">
                     </div>
                     <div class="component__code">
+                        <section class="menu menu__section">
+                            <h2 class="menu__heading">Entre&eacute;s</h2>
+                            <div class="menu__item">
+                                <h3 class="menu__item-name">Roasted Chicken 27.00</h3>
+                                <p class="menu__item-description">with braised kale, garlic croutons, lemon, capers, white wine</p>
+                            </div>
+                            <div class="menu__item">
+                                <h3 class="menu__item-name">Roasted Salmon 27.00</h3>
+                                <p class="menu__item-description">balsamic eggplant puree, salsa cruda, balsamico</p>
+                            </div>
+                        </section>
                     </div>
                 </article>
 
@@ -428,6 +443,37 @@
                         <img src="img/menu__section-outline.png" alt="outlined menu section" srcset="img/menu__section-outline.png 2x">
                     </div>
                     <div class="component__code">
+                        <section class="menu menu__section-outline">
+                            <h2 class="menu__heading">Soups-Salads-Appetizers</h2>
+                            <div class="menu__item">
+                                <h3 class="menu__item-name">Crispy Risotto Balls 10.25</h3>
+                                <p class="menu__item-description">mozzarella, Grana Padano, herb aioli, marinara</p>
+                            </div>
+                            <div class="menu__item">
+                                <h3 class="menu__item-name">Minestrone 9.00</h3>
+                                <p class="menu__item-description">cranberry beans, vegetables, Grana Padano</p>
+                            </div>
+                            <div class="menu__item">
+                                <h3 class="menu__item-name">Mixed Greens 8.75/17.50</h3>
+                                <p class="menu__item-description">sliced pear, walnuts, goat cheese, red wine vinaigrette</p>
+                            </div>
+                            <div class="menu__item">
+                                <h3 class="menu__item-name">Little Gem Chopped Salad 9.75/18.50</h3>
+                                <p class="menu__item-description">chickpea, green olive, pistachio, pepperoni, oregano, red wine vinaigrette, pecorino</p>
+                            </div>
+                            <div class="menu__item">
+                                <h3 class="menu__item-name">Shaved Kale 8.75/17.50</h3>
+                                <p class="menu__item-description">creamy anchovy dressing, pecorino, bread crumbs</p>
+                            </div>
+                            <div class="menu__item">
+                                <h3 class="menu__item-name">Marinated Olives 8.00</h3>
+                                <p class="menu__item-description">rosemary, thyme, citrus</p>
+                            </div>
+                            <div class="menu__item">
+                                <h3 class="menu__item-name">Whipped Ricotta 13.50</h3>
+                                <p class="menu__item-description">sweet pepper agrodolce, olive oil, garlic toast</p>
+                            </div>
+                        </section>
                     </div>
                 </article>
 
@@ -437,6 +483,12 @@
                         <img src="img/menu__kids.png" alt="kids menu section" srcset="img/menu__kids.png 2x">
                     </div>
                     <div class="component__code">
+                        <section class="menu menu__section-kids">
+                            <h2 class="menu__heading">Kid's Desserts</h2>
+                            <div class="menu__item"><h3 class="menu__item-name">Kid's Gelato Scoop</h3></div>
+                            <div class="menu__item"><h3 class="menu__item-name">Chocolate Chip Cookie</h3></div>
+                            <div class="menu__item"><h3 class="menu__item-name">Kid's Birthday Cake</h3></div>
+                        </section>
                     </div>
                 </article>
             </section>
