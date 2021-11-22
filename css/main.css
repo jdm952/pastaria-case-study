@@ -224,15 +224,6 @@ header {
 .list--employment {
     padding-left: 2.6rem;
 }
-.main__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1, 1fr;
-}
-
-.main__img-guy {
-    display: contents;
-}
 
 .main__card-group {
     grid-column: 3;
@@ -603,7 +594,7 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 .footer__icon {
     color: var(--gray-light2);
     font-size: 1.5rem;
-    display: inline block;
+    display: inline-block;
 }
 
 .footer__section--link {
