@@ -12,7 +12,15 @@
     <title>Pastaria - St. Louis - A fresh approach to Italian dining</title>
 </head>
 <body>
-   
+
+    <div class="header__nav">
+        <h2 class="header header__nav-item">St. Louis</h2>
+        <div class="nashville">
+            <p class="header__nav-item--white">Go To</p>
+            <h2 class="header header__nav-item-gray">Nashville</h2>
+        </div>
+    </div>
+
     <div class="main__container">
         <img class="main__img-guy" src="https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/head_photo.jpg" alt="man throwing pizza dough">
         <div class="main__card-group">
@@ -23,5 +31,104 @@
         </div>
     </div>
 
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 9</div>
+            <img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Dishes1.jpg" alt="dishes" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 9</div>
+            <img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Gelato.jpg" alt="gelato" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 9</div>
+            <img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Peppporoni.jpg" alt="pepperoni pizza" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 9</div>
+            <img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2012/10/Family.jpg" alt="family at table" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 9</div>
+            <img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Ramen.jpg" alt="ramen" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 9</div>
+            <img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/RisotoBalls.jpg" alt="risotto balls" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 9</div>
+            <img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/Salmon.jpg" alt="salmon" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 9</div>
+            <img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2017/10/TheHolmes.jpg" alt="pizza" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">9 / 9</div>
+            <img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2012/10/Interior2.jpg" alt="inside restaurant" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
 </body>
 </html>
