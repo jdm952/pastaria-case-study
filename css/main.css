@@ -307,6 +307,8 @@ img {
 
 .noodle {
     margin: auto;
+    display: block;
+    padding: 0 25rem 0 15rem;
 }
 
 .main-bottom__container {
