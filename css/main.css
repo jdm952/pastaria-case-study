@@ -61,74 +61,11 @@ a {
 
 img {
     max-width: 100%;
+    min-width: 100%;
     display: block;
 }
 
-/** components page settings **/
-
-.component-page {
-    display: grid;
-    grid-template-columns: 18rem minmax(0, 1fr);
-    grid-template-areas: "header main";
-    background-color: var(--gray-light);
-}
-
-header {
-    background-color: var(--orange);
-    padding: 1rem 2rem;
-    position: fixed;
-    overflow-y: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 18rem;
-}
-
-.sidebar-nav__heading {
-    padding-top: 2rem;
-}
-
-.sidebar-nav a {
-    text-decoration: none;
-    color: var(--white);
-}
-
-.sidebar-nav__list {
-    list-style: none;
-    padding-left: 0;
-}
-.components {
-    padding: 2.8rem 1rem 1rem;
-    display: block;
-    grid-area: main;
-}
-
-.components__section {
-    display: contents;
-}
-
-/** components **/
-
-.component img {
-    max-width: initial;
-}
-
-.component__img {
-    border: 1px solid var(--gray-black);
-    overflow-x: auto; 
-}
-
-.component__img .component__img-small {
-    max-width: 100%;
-}
-
-.component__code {
-    border: 1px solid var(--gray-black);
-}
-
-.component__code--orbs {
-    background-color: var(--white);
-}
+/** header & main nav **/
 
 .header {
     color: var(--white);
@@ -141,18 +78,20 @@ header {
     display: flex;
     align-items: center;
     font-size: 1.9rem;
+    text-align: center;
 }
 
 .header__nav-item {
     background-color: var(--orange);
     flex-grow: 1;
-    padding: 2rem 10rem;
+    padding: 2.8rem;
+    margin: 0;
 }
 
 .header__nav-item-gray {
     color: var(--gray);
     display: inline;
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 .header__nav-item--white {
@@ -167,7 +106,7 @@ header {
     display: block;
     background-color: var(--gray-header);
     flex-grow: 1;
-    padding: 2rem 10rem;
+    padding: 2.8rem;
 }
 
 .main {
