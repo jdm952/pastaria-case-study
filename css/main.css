@@ -450,6 +450,14 @@ background-color: #717171;
     display: none;
 }
 
+.menus-section {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+}
+
+.menus {
+    padding: 1rem;
+}
 
 .menus__list {
     letter-spacing: 1px;
