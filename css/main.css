@@ -118,12 +118,28 @@ img {
     letter-spacing: 1px;
 }
 
-.main-nav {
-    color: var(--white);
+.main__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 2.5rem;
+    padding-bottom: 30rem;
+    background: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/head_photo.jpg) no-repeat;
+    background-size: cover;
+}
 
+.main__img-guy {
+    display: none;
+}
+
+.yum {
+    display: none;
+    width: 115px;
+    height: 108px;
 }
 
 .main-nav {
+    position: sticky;
     display: block;
     background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/logobg.png);
     background-repeat: no-repeat;
@@ -171,6 +187,7 @@ img {
     flex-wrap: nowrap;
     align-items: flex-end;
     width: 380px; /** remove width on final project page **/
+    padding-top: 1.2rem;
 }
 
 .main__card {
@@ -296,6 +313,7 @@ img {
     background: url("https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/orbs.png");
     text-align: center;
     margin: auto;
+    padding-top: 3rem;
 }
 
 .slideshow-container{
