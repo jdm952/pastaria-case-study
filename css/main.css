@@ -450,12 +450,9 @@ background-color: #717171;
     display: none;
 }
 
-.menus-section {
+.menus {
     display: grid;
     grid-template-columns: 1.2fr 2fr;
-}
-
-.menus {
     padding: 1rem;
 }
 
@@ -482,13 +479,13 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     text-decoration: underline;
 }
 
-.menu__section-note {
+.menu__note {
     color: var(--gray-menu-note);
     letter-spacing: 1px;
     font-size: 1.1rem;
 }
 
-.menu__section-note--link {
+.menu__note--link {
     font-family: var(--font-heading);
     font-weight: 700;
     text-transform: uppercase;
@@ -501,6 +498,16 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 .menu {
     padding: 0 .8rem;
     width: 295px;
+}
+
+.menu__dinner {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.menu__img {
+    grid-column: 1 / span 2;
 }
 
 .menu__section-outline {
