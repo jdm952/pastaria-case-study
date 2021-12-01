@@ -132,10 +132,13 @@ img {
     display: none;
 }
 
-.yum {
-    display: none;
+.yum__container {
+    display: block;
+    max-width: contents;
     width: 115px;
     height: 108px;
+    position: absolute;
+
 }
 
 .main-nav {
@@ -242,8 +245,10 @@ img {
     display: inline-block;
 }
 
-.main__heading-block {
+.main__heading-block-container {
     margin: auto;
+    display: block;
+    max-width: fit-content;
 }
 
 .main-text {
@@ -501,34 +506,7 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 }
 
 .menu__dinner {
-    display: grid;
-    grid-template-columns: 3fr, repeat(5, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-}
-
-.menu__dinner-img {
-    grid-column: span 2;
-    grid-row: span 4;
-}
-
-.entrees {
-    grid-column: 3;
-    grid-row: 2;
-}
-
-.pastas {
-    grid-column: 3;
-    grid-row: 3 / 4;
-}
-
-.soups { 
-    grid-column: 4;
-    grid-row: 2;
-}
-
-.pizzas {
-    grid-column: 3;
-    grid-row: 5;
+    display: flex;
 }
 
 .menu__section-outline {
@@ -573,8 +551,9 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     max-width: 275px;
 }
 
-.footer__icon--top {
+.footer__icon--top-container {
     width: 540px;
+    margin: auto;
 }
 .footer__section-heading {
     font-size: 1.1rem;
