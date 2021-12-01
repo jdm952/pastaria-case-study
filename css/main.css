@@ -571,6 +571,7 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 
 .newsletter__container {
     padding: 1rem;
+    margin: auto;
 }
 
 .newsletter {
