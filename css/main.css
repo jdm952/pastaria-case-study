@@ -634,9 +634,14 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 .footer__section--link {
     color: var(--orange);
 }
+
 .footer__section-heading {
     font-size: 1.1rem;
     margin: .8rem 0;
+}
+
+.footer__header-img-container img {
+    min-width: 1600px;
 }
 
 .footer__icon--top-container {
