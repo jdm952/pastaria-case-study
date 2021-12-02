@@ -138,7 +138,8 @@ img {
     width: 115px;
     height: 108px;
     position: absolute;
-
+    right: 650px;
+    top: 450px;
 }
 
 .main-nav {
@@ -455,6 +456,24 @@ background-color: #717171;
     display: none;
 }
 
+.wood {
+    position: absolute;
+    display: block;
+}
+
+.section__headings--menus {
+    display: block;
+    position: absolute;
+    top: 100px;
+    z-index: 101;
+}
+
+.menus {
+    display: block;
+    position: relative;
+    top: 150px;
+}
+
 .menus__list {
     letter-spacing: 1px;
     font-size: .9rem;
@@ -464,6 +483,7 @@ background-color: #717171;
     justify-content: space-between;
     width: 410px;
     grid-column: span 2;
+    margin-left: 1rem;
 }
 
 .menus__list a {
