@@ -247,9 +247,13 @@ img {
 }
 
 .main__heading-block-container {
-    margin: auto;
+    margin-right: 500px;
     display: block;
+    position: absolute;
     max-width: fit-content;
+    z-index: 100;
+    bottom: -780px;
+    right: 0px;
 }
 
 .main-text {
@@ -322,6 +326,7 @@ img {
     text-align: center;
     margin: auto;
     padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .slideshow-container{
@@ -456,24 +461,17 @@ background-color: #717171;
     display: none;
 }
 
-.wood {
+.menus__header {
     position: absolute;
-    display: block;
+    right: 775px;
+    top: 2595px;
+    z-index: 100;
 }
-
-.section__headings--menus {
-    display: block;
-    position: absolute;
-    top: 100px;
-    z-index: 101;
-}
-
-.menus {
+.wood { 
     display: block;
     position: relative;
-    top: 150px;
+    /** display: none; **/
 }
-
 .menus__list {
     letter-spacing: 1px;
     font-size: .9rem;
@@ -525,7 +523,7 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 }
 
 .menu__dinner-img {
-    flex-basis: 40%;
+
     height: 1860px;
 }
 
@@ -590,39 +588,59 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     margin: 0;
 }
 
+/** footer - begins at Delicious food. Delivered. **/
+
 .footer {
     max-width: 275px;
     padding: 0;
     margin: .5rem 0;
 }
 
-.footer__blurb {
-    max-width: 275px;
+.footer__top {
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
-.footer__icon--top-container {
-    width: 540px;
-    margin: auto;
+.footer__top--left {
+    display: flex;
+    padding: 5rem 5rem 5rem 1rem;
+}
+
+.footer__top--right {
+    padding: 5rem 2rem 5rem 5rem;
+}
+
+.footer__logo {
+    width: 200px;
+    padding-right: 1rem;
+}
+
+.footer__blurb {
+    max-width: 275px;
+    display: block;
+}
+
+.footer__section--link {
+    color: var(--orange);
 }
 .footer__section-heading {
     font-size: 1.1rem;
     margin: .8rem 0;
 }
 
-.footer__icon-list {
-    display: flex;
-    justify-content: space-around;
-    width: 150px;
+.footer__icon--top-container {
+    display: block;
+    margin: auto;
+    width: 540px;
+    padding-top: 4rem;
 }
 
 .footer__icon {
     color: var(--gray-light2);
     font-size: 1.5rem;
     display: inline-block;
-}
-
-.footer__section--link {
-    color: var(--orange);
+    margin: auto;
 }
 
 .newsletter__container {
@@ -631,7 +649,6 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 }
 
 .newsletter {
-    width: 345px;
     text-align: center;
 }
 
@@ -680,4 +697,17 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     padding: 0 .6rem;
 }
 
+.footer__icon-list {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+    margin: auto;
+}
 
+.footer__section--bottom-link a{
+    display: block;
+    color: var(--orange);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:smaller;
+}

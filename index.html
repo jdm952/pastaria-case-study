@@ -141,8 +141,10 @@
         <span class="dot" onclick="currentSlide(9)"></span>
     </div>
 
-    <img class="wood" src="https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/wood.jpg">
-    <h2 class="section__heading section__heading--menus">Menus</h2>
+    <section class="menus__heading">
+        <img class="wood" src="https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/wood.jpg">
+        <div class="menus__header"><h2 class="section__heading">Menus</h2></div>
+    </section>
     <div class="menus">
             <section class="menu__dinner">
                 <div class="menu__dinner-img"><img src="https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/dinner_stl.jpg"></div>
@@ -279,21 +281,36 @@
                             <h3 class="menu__item-name">Crispy Potatoes 7.75</h3>
                             <p class="menu__item-description">pecorino, lemon, parsley</p>
                         </div>
-                    </section>
-                </section>
-            </section>
-        </section>
+                    </section> <!--vegetables-->
+                </section> <!--menu__section-->
+            </section> <!--menu__dinner-->
+        </section> <!--menus-->
     </div>
 
-    <footer>
-        <div class="footer__blurb">
-            <h4 class="footer__section-heading">Delicious food, delivered.</h4>
-            <p class="footer">Your favorite Pastaria dishes are now available for delivery by DoorDash.</p>
-            <a class="footer__section--link" href="https://www.toasttab.com/pastariastl/v3/">Order now.</a>
-        </div>
-        <div clas="footer__header-img-container"><img class="footer__header-img" src="https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/socialbg.jpg"></div>
-        <div class="newsletter__container">
-            <div class="footer__icon--top-container"><img class="footer__icon--top" src="https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/footericon.png" alt="footer heading image"></div>
+    <footer class="footer__container">
+        <div class=footer__top>
+            <div class=footer__top--left>
+                <div class="footer__logo"><img src="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2021/03/doordash-e1614897859731.jpg" alt="DoorDash Logo"></div>
+                <div class="footer__blurb">
+                    <h4 class="footer__section-heading">Delicious food, delivered.</h4>
+                    <p class="footer">Your favorite Pastaria dishes are now available for delivery by DoorDash.</p>
+                    <a class="footer__section--link" href="https://www.toasttab.com/pastariastl/v3/">Order now.</a>
+                </div>
+            </div>
+            <div class="footer__top--right">
+                <div class="footer__blurb">
+                    <h4 class="footer__section-heading">Private dining available for up to 50 people.</h4>
+                    <p class="footer">To find out more, <a class="footer__section--link" href="mailto:madi@nichestlouis.com">email us</a>.</p>
+                </div>
+                <div class="footer__blurb">
+                    <h4 class="footer__section-heading">Yes, we cater too!</h4>
+                    <p class="footer">View our <a class="footer__section--link" href="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2021/05/Deli-Catering-5.18.21.pdf">lunch</a> or <a class="footer__section--link" href="https://eatpastaria.com/stlouis/wp-content/uploads/sites/3/2021/01/Pastaria-Dinner-Catering.pdf">dinner</a> options. For a quote, <a class="footer__section--link" href="mailto:madi@nichestlouis.com">email us</a>.</p>
+                </div>
+            </div> <!--footer__top--right-->
+        </div> <!--footer__top-->
+        <div clas="newsletter footer__header-img-container"><img src="https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/socialbg.jpg"></div>
+        <div class="footer__icon--top-container"><img src="https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/footericon.png" alt="footer heading image"></div>
+        <div class="newsletter newsletter__container">
             <h3 class="newsletter newsletter__heading">St. Louis</h3>
             <h3 class="newsletter newsletter__subheading">(Sorta Close to Italy)</h3>
             <p class="newsletter newsletter__text">Get the scoop on what's happening at Pastaria</p>
@@ -309,6 +326,7 @@
             <a href="https://twitter.com/PastariaSTL" class="footer__icon"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/pastariastl/" class="footer__icon"><i class="fab fa-instagram"></i></a>
         </div>
+        <p class="footer__section--link"><a href="http://nichefoodgroup.com/">About Niche Food Group</a></p>
     </footer>
 
     <script>
