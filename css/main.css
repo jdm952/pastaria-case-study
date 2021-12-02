@@ -530,6 +530,7 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 
 .soups {
     grid-column: 2;
+    grid-row: 2 / 11;
 }
 
 .vegetables {
@@ -537,7 +538,7 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     grid-row: 11;
 }
 
-.menu__section-outline {
+.menu__dinner-section--outline {
     border: 4px double var(--gray-menu-outline);
 }
 
