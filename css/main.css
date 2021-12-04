@@ -462,14 +462,16 @@ background-color: #717171;
 }
 
 .menus__header {
-    position: absolute;
-    right: 775px;
-    top: 2595px;
-    z-index: 100;
+    position: relative;
+    left: 50%;
+    top: -27px;
 }
+
 .wood { 
     display: block;
     position: relative;
+    height: 168px;
+    overflow: hidden;
     /** display: none; **/
 }
 .menus__list {
@@ -520,6 +522,10 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 
 .menu__dinner {
     display: flex;
+    height: 1867px;
+    position: relative;
+    top: -84px;
+    overflow: hidden;
 }
 
 .menu__dinner-img {
@@ -536,6 +542,7 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(23, 80px);
     padding-left: 1rem;
+    padding-top: 1rem;
 }
 
 .entrees {
