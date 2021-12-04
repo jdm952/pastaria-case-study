@@ -530,11 +530,14 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 
 .menu__dinner-img {
     flex-basis: 40%;
-    overflow: hidden;
+    display: block;
+    background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/dinner_stl.jpg);
+    background-size: auto 1867px;
+    background-position: right top;
 }
 
 .menu__dinner-img img {
-    height: 1860px;
+    display: none;
 }
 
 .menu__section {
