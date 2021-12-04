@@ -543,32 +543,49 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 .menu__section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(23, 80px);
+    grid-template-rows: 3.5rem repeat(8, 5rem) 1rem repeat(14, 5rem) 1rem;
     padding-left: 1rem;
     padding-top: 1rem;
 }
 
 .entrees {
     grid-column: 1;
+    grid-row: 2 / 5;
+    position: relative;
+    top: 1rem;
 }
 
 .pastas {
-    grid-row: 5 / 13;
+    grid-row: 5 / 14;
 }
 
 .pizzas { 
     grid-column: 1;
-    grid-row: 14 / 22;
+    grid-row: 15;
+    position: relative;
+    top: -2rem;
 }
 
 .soups {
     grid-column: 2;
     grid-row: 2 / 11;
+    position: relative;
+    top: 1rem;
 }
 
 .vegetables {
     grid-column: 2;
     grid-row: 12;
+    position: relative;
+    top: -2rem;
+}
+
+.certificate {
+    grid-column: 1;
+    grid-row: 23 / 26;
+    background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/gift-cert-orb.png);
+    background-repeat: no-repeat;
+    margin-left: 3rem; 
 }
 
 .menu__dinner-section {
@@ -584,7 +601,7 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     color: var(--gray-black);
     font-size: 1.8rem;
     margin: 0;
-    padding: 1rem 0 .5rem 0;
+    padding: .5rem 0 .5rem 0;
     line-height: 1.2;
 }
 
