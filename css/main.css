@@ -29,7 +29,6 @@ html {
   }
 
 /** typography **/
-
 body {
     font-family: var(--font-sans-serif);
     color: var(--black);
@@ -39,26 +38,21 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
-
 h1, h2, h3 {
     font-family: var(--font-heading);
     font-weight: 700;
     text-transform: uppercase;
 }
-
 h1 {
     font-size: 2.5rem;
 }
-
 h2 {
     padding: 2rem 0 0;
     font-size: 1.7rem;
 }
-
 a {
     color: var(--black);
 }
-
 img {
     max-width: 100%;
     min-width: 100%;
@@ -66,7 +60,6 @@ img {
 }
 
 /** header & header nav **/
-
 .header {
     color: var(--white);
     letter-spacing: 1px;
@@ -258,7 +251,7 @@ img {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: flex-end;
-    width: 350px; /** remove width on final project page **/
+    width: 350px;
 }
 .main__table-item {
     color: var(--navy);
@@ -346,29 +339,6 @@ img {
 .next:hover {
     background-position: -61px -62px;
   }
-/** for img carousel 
-.img-carousel__button--left {
-    background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/arrows_orb.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    padding: 1.8rem 1.8rem 2rem 2rem;
-    display: block;
-    width: 61px;
-}
-
-.img-carousel__button--right {
-    background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/arrows_orb.png);
-    background-repeat: no-repeat;
-    padding: 1.8rem;
-    display: block;
-    width: 61px;
-    right: 0;
-}
-
-.img-carousel__button--right:hover {
-    top: 0;
-}
-**/
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -450,8 +420,7 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     height: 1867px;
     top: -84px;
     position: relative;
-/** Code I was using to flip through the menus---
-
+/** Code I was using to flip through the menus, couldn't get it to work---
     position: absolute;
     right: 50px;
     top: -11px;
@@ -565,7 +534,7 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 }
 .menu__kids {
     height:1469px;
-    display:none;
+    display: none;
 }
 .menu__kids--text {
     grid-column: 1;
@@ -634,8 +603,6 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     grid-row: 6;
     grid-column: 2;
 }
-
-
 
 /** footer - begins at Delicious food. Delivered. **/
 .footer {
@@ -738,7 +705,6 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     width: 150px;
     margin: auto;
 }
-
 .footer__section--bottom-link a{
     display: block;
     color: var(--orange);
@@ -748,6 +714,7 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     padding: 2rem;
 }
 
+/**media queries**/
 @media screen and (max-width:1200px) {
     .main-nav {
         left: 5%;
