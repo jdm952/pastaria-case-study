@@ -65,7 +65,7 @@ img {
     display: block;
 }
 
-/** header & main nav **/
+/** header & header nav **/
 
 .header {
     color: var(--white);
@@ -73,27 +73,23 @@ img {
     font-size: 1.8rem;
     line-height: 2.5rem;
 }
-
 .header__nav {
     display: flex;
     align-items: center;
     font-size: 1.9rem;
     text-align: center;
 }
-
 .header__nav-item {
     background-color: var(--orange);
     flex-grow: 1;
     padding: 2.8rem;
     margin: 0;
 }
-
 .header__nav-item--gray {
     color: var(--gray);
     display: inline;
     padding-left: 1rem;
 }
-
 .header__nav-item--white {
     display: inline;
     color: var(--white);
@@ -101,7 +97,6 @@ img {
     font-family: var(--font-heading);
     font-size: 1.2rem;
 }
-
 .nashville {
     display: block;
     background-color: var(--gray-header);
@@ -109,6 +104,7 @@ img {
     padding: 2.8rem;
 }
 
+/** main section and main nav **/
 .main {
     font-family: var(--font-heading);
     text-transform: uppercase;
@@ -117,7 +113,6 @@ img {
     font-size: 1.3rem;
     letter-spacing: 1px;
 }
-
 .main__container {
     padding-top: 2.5rem;
     padding-bottom: 30rem;
@@ -126,21 +121,17 @@ img {
     background: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/head_photo.jpg) no-repeat;
     background-size: cover;
 }
-
 .main__img-guy {
     display: none;
 }
-
 .yum__container {
     display: block;
-    max-width: contents;
     width: 115px;
     height: 108px;
     position: absolute;
     right: 650px;
     top: 450px;
 }
-
 .main-nav {
     position: fixed;
     left: 20rem;
@@ -151,13 +142,10 @@ img {
     max-width: 305px;
     padding: 3rem 2rem 1.2rem 2rem;
     z-index: 100;
-
 }
-
 .main-nav__logo {
     padding: .9rem 1rem .2rem 1.5rem;
 }
-
 .main-nav__list {
     list-style: none;
     padding: 0 1.5rem 1rem 2.2rem;
@@ -166,7 +154,6 @@ img {
     line-height: 1.3;
     text-align: center;
 }
-
 .main-nav__list li {
     display: inline-block;
     padding: .3rem;
@@ -178,15 +165,12 @@ img {
     font-weight: 700;
     letter-spacing: 1px;
 }
-
 .list--gift {
     padding-left:1.4rem;
 }
-
 .list--employment {
     padding-left: 2.6rem;
 }
-
 .main__card-group {
     grid-column: 3;
     display: flex;
@@ -196,7 +180,6 @@ img {
     width: 380px; /** remove width on final project page **/
     padding-top: 1.2rem;
 }
-
 .main__card {
     background-color: var(--white);
     padding: .5rem;
@@ -204,12 +187,10 @@ img {
     font-size: 1.4rem;
     margin: .1rem;
 }
-
 .main__card--navy {
     color: var(--navy);
     font-size:1.12rem;
 }
-
 .main__card--gray {
     color: var(--gray-contact);
     font-size: 1rem;
@@ -222,7 +203,6 @@ img {
     letter-spacing: normal;
     color: var(--navy);
 }
-
 .main__link-button {
     display: block;
     background: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/icon-arrow.gif) no-repeat 97% 50% transparent;
@@ -239,16 +219,78 @@ img {
     width: 65%;
     transition: all 0.5s ease;
 }
-
 .main__link-button:hover {
     background-position: 98% 50%;
 }
-
+.main-text {
+    display: inline-block;
+}
+.main__link-button span {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 2rem;
+    font-size: 1.05rem;
+}
+.main__link-button {
+    padding-right: 1rem;
+    max-width: 640px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+.section__heading {
+    background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/orb-orange.png);
+    background-repeat: no-repeat;
+    color: var(--white);
+    font-size: small;
+    padding: 1rem 1.2rem 1.2rem .6rem;
+    letter-spacing: 1px;
+}
+.main__table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main__table-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    width: 350px; /** remove width on final project page **/
+}
+.main__table-item {
+    color: var(--navy);
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin: .7rem;
+}
+.main__table h2 {
+    align-self: center;
+}
+.main__grid h3, .main__grid p {
+    padding: .2rem;
+    margin: 0;
+}
+.noodle__container {
+    margin: auto;
+    display: block;
+    position: relative;
+    left: 30px;
+    bottom: -20px;
+    max-width: 1230px;
+}
+.main-bottom__container {
+    background: url("https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/orbs.png");
+    text-align: center;
+    margin: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
 .main__heading {
     font-size: 1.1rem;
     display: inline-block;
 }
-
 .main__heading-block-container {
     margin-right: 500px;
     display: block;
@@ -259,92 +301,15 @@ img {
     left: 45rem;
 }
 
-.main-text {
-    display: inline-block;
-}
-
-.main__link-button span {
-    font-family: var(--font-heading);
-    text-transform: uppercase;
-    font-weight: 700;
-    padding-left: 2rem;
-    font-size: 1.05rem;
-}
-
-.main__link-button {
-    padding-right: 1rem;
-    max-width: 640px;
-    margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
-}
-
-.section__heading {
-    background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/orb-orange.png);
-    background-repeat: no-repeat;
-    color: var(--white);
-    font-size: small;
-    padding: 1rem 1.2rem 1.2rem .6rem;
-    letter-spacing: 1px;
-}
-
-.main__table {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.main__table-text {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    width: 350px; /** remove width on final project page **/
-}
-
-.main__table-item {
-    color: var(--navy);
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-    margin: .7rem;
-}
-
-.main__table h2 {
-    align-self: center;
-}
-
-.main__grid h3, .main__grid p {
-    padding: .2rem;
-    margin: 0;
-}
-
-.noodle__container {
-    margin: auto;
-    display: block;
-    position: relative;
-    left: 30px;
-    bottom: -20px;
-    max-width: 1230px;
-}
-
-.main-bottom__container {
-    background: url("https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/orbs.png");
-    text-align: center;
-    margin: auto;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
+/**image carousel**/
 .slideshow-container{
     max-width: 100%;
     position: relative;
     margin: auto;
 }
-
 .mySlides {
     display: none;
 }
-
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -357,7 +322,6 @@ img {
     overflow: hidden;
     white-space: nowrap;
 }
-
 .prev {
     background-size: 122px 123px;
     height: 57px;
@@ -366,7 +330,6 @@ img {
     margin-top: -28px;
     width: 59px;
   }
-
 .next {
     background-size: 122px 123px;
     background-position: -61px 0;
@@ -376,52 +339,12 @@ img {
     right: 10%;
     width: 61px;
   }
-  
 .prev:hover{
     background-position: 0 -62px;
 }
-  
 .next:hover {
     background-position: -61px -62px;
   }
-  
-/* Caption text */
-.text {
-color: #f2f2f2;
-font-size: 15px;
-padding: 8px 12px;
-position: absolute;
-bottom: 8px;
-width: 100%;
-text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-color: #f2f2f2;
-font-size: 12px;
-padding: 8px 12px;
-position: absolute;
-top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-cursor: pointer;
-height: 15px;
-width: 15px;
-margin: 0 2px;
-background-color: #bbb;
-border-radius: 50%;
-display: inline-block;
-transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-background-color: #717171;
-}
-  
-
 /** for img carousel 
 .img-carousel__button--left {
     background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/arrows_orb.png);
@@ -445,44 +368,56 @@ background-color: #717171;
     top: 0;
 }
 **/
-
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
 }
-  
 @-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-}
-  
+} 
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
 }
-
 .dot, .text, .numbertext {
     display: none;
 }
 
+/**menu section**/
 .menus__header {
     position: relative;
     left: 50%;
     top: -27px;
 }
-
 .menus {
     position: relative;
 }
-
 .wood { 
     display: block;
     position: relative;
     height: 168px;
     overflow: hidden;
-    /** display: none; **/
+}
+
+/**all menus**/
+.menu__img {
+    flex-basis: 40%;
+    display: block;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+.menu__img--dinner img, .menu__img--kids img, .menu__img--dessert img, .menu__img--deli img {
+    display: none;
+}
+.menu__section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3.5rem repeat(8, 5rem) 1rem repeat(14, 5rem) 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
 }
 .menus__list {
     letter-spacing: 1px;
@@ -495,51 +430,28 @@ background-color: #717171;
     grid-column: span 2;
     margin-left: 1rem;
 }
-
 .menus__list a {
     text-decoration: none;
     color: var(--gray-light2);
 }
-
 a .menus__list-active {
     color: var(--navy);
 }
-
 a .menus__list-active:hover, a .menus__list-item:hover {
     text-decoration: underline;
 }
-
-.menu__note {
-    color: var(--gray-menu-note);
-    letter-spacing: 1px;
-    font-size: 1.1rem;
-    padding-left: 2rem;
-    align-self:flex-end;
-    margin-bottom: .1rem;
-}
-
-.menu__note--link {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    text-transform: uppercase;
-    font-style: normal;
-    letter-spacing: 1px;
-    color: var(--orange);
-    padding-left: 0;
-}
-
 .menu {
     padding: 0 .8rem;
     width: 295px;
 }
-
-
 .menu__structure {
     display: flex;
     height: 1867px;
     top: -84px;
     position: relative;
-/**    position: absolute;
+/** Code I was using to flip through the menus---
+
+    position: absolute;
     right: 50px;
     top: -11px;
     z-index: 10; **/
@@ -555,161 +467,6 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     height: 0;
 }
 **/
-
-.menu__dessert {
-    height:1269px;
-    display: none;
-}
-
-.menu__kids {
-    height:1469px;
-    display:none;
-}
-
-.menu__deli {
-    height: 1550px;
-    display: none;
-}
-
-.menu__kids--text {
-    grid-column: 1;
-    grid-row: 3;
-    font-weight: 700;
-    font-size: large;
-    padding-left: 2rem;
-}
-
-.menu__kids--text h2 {
-    padding: 1rem 0 .25rem 0;
-    margin-top: 0;
-}
-
-.menu__kids--text p {
-    padding: 0;
-    line-height: .9;
-}
-
-.menu__dessert--text {
-    display: block;
-    padding-left: 2rem;
-}
-
-.menu__img--dinner {
-    background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/dinner_stl.jpg);
-    background-size: auto 1867px;
-}
-
-.menu__img--kids {
-    background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/kidsmenu.jpg);
-    background-size: auto 1469px;
-}
-
-.menu__img--dessert {
-    background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/dessert_stl.jpg);
-    background-size: auto 1269px;
-}
-
-.menu__img--deli {
-    background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/deli-wine-stl.jpg);
-    background-size: auto 1500px;
-}
-
-.menu__img {
-    flex-basis: 40%;
-    display: block;
-    background-position: right top;
-    background-repeat: no-repeat;
-}
-
-.menu__img--dinner img, .menu__img--kids img, .menu__img--dessert img, .menu__img--deli img {
-    display: none;
-}
-
-.menu__section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 3.5rem repeat(8, 5rem) 1rem repeat(14, 5rem) 1rem;
-    padding-left: 1rem;
-    padding-top: 1rem;
-}
-
-.menu__section--dessert {
-    padding-left: 1rem;
-    padding-top: 1rem;
-    max-width: 650px;
-}
-
-.entrees {
-    grid-column: 1;
-    grid-row: 2 / 5;
-    position: relative;
-    top: 1rem;
-}
-
-.pastas {
-    grid-row: 5 / 14;
-}
-
-.pizzas { 
-    grid-column: 1;
-    grid-row: 15;
-    position: relative;
-    top: -2rem;
-}
-
-.soups {
-    grid-column: 2;
-    grid-row: 2 / 11;
-    position: relative;
-    top: 1rem;
-}
-
-.vegetables {
-    grid-column: 2;
-    grid-row: 12;
-    position: relative;
-    top: -2rem;
-}
-
-.certificate {
-    grid-column: 1;
-    grid-row: 23 / 26;
-    background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/gift-cert-orb.png);
-    background-repeat: no-repeat;
-    margin-left: 3rem; 
-}
-
-.order {
-    grid-row: 2;
-    align-self: center;
-}
-
-.sandwiches {
-    grid-row: 3;
-}
-
-.sides {
-    grid-row: 13;
-}
-
-.desserts {
-    grid-row: 3;
-}
-
-.provisions {
-    grid-row: 6;
-    grid-column: 2;
-}
-
-.menu__dinner-section {
-    padding-left: 2rem;
-}
-
-.menu__dinner-section--outline {
-    border: 4px double var(--gray-menu-outline);
-    margin-left: 2rem;
-}
-
 .menu__heading {
     color: var(--gray-black);
     font-size: 1.8rem;
@@ -717,11 +474,9 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     padding: .5rem 0 .5rem 0;
     line-height: 1.2;
 }
-
 .menu__item {
     margin: .5rem 0;
 } 
-
 .menu__item-name {
     font-family: var(--font-sans-serif);
     text-transform: none;
@@ -729,7 +484,6 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     margin: 0;
     line-height: 1.3;
 }
-
 .menu__item-description {
     font-style: italic;
     color: var(--gray-menu);
@@ -738,6 +492,114 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     margin: 0;
 }
 
+/**dinner**/
+.menu__img--dinner {
+    background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/dinner_stl.jpg);
+    background-size: auto 1867px;
+}
+.menu__dinner-section {
+    padding-left: 2rem;
+}
+
+.menu__dinner-section--outline {
+    border: 4px double var(--gray-menu-outline);
+    margin-left: 2rem;
+}
+.entrees {
+    grid-column: 1;
+    grid-row: 2 / 5;
+    position: relative;
+    top: 1rem;
+}
+.pastas {
+    grid-row: 5 / 14;
+}
+.pizzas { 
+    grid-column: 1;
+    grid-row: 15;
+    position: relative;
+    top: -2rem;
+}
+.soups {
+    grid-column: 2;
+    grid-row: 2 / 11;
+    position: relative;
+    top: 1rem;
+}
+.vegetables {
+    grid-column: 2;
+    grid-row: 12;
+    position: relative;
+    top: -2rem;
+}
+.certificate {
+    grid-column: 1;
+    grid-row: 23 / 26;
+    background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/gift-cert-orb.png);
+    background-repeat: no-repeat;
+    margin-left: 3rem; 
+}
+
+/**kids**/
+.menu__img--kids {
+    background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/kidsmenu.jpg);
+    background-size: auto 1469px;
+}
+.menu__note {
+    color: var(--gray-menu-note);
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    padding-left: 2rem;
+    align-self:flex-end;
+    margin-bottom: .1rem;
+}
+.menu__note--link {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 1px;
+    color: var(--orange);
+    padding-left: 0;
+}
+.menu__kids {
+    height:1469px;
+    display:none;
+}
+.menu__kids--text {
+    grid-column: 1;
+    grid-row: 3;
+    font-weight: 700;
+    font-size: large;
+    padding-left: 2rem;
+}
+.menu__kids--text h2 {
+    padding: 1rem 0 .25rem 0;
+    margin-top: 0;
+}
+.menu__kids--text p {
+    padding: 0;
+    line-height: .9;
+}
+
+/**dessert**/
+.menu__section--dessert {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    max-width: 650px;
+}
+.menu__img--dessert {
+    background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/dessert_stl.jpg);
+    background-size: auto 1269px;
+}
+.menu__dessert {
+    height:1269px;
+    display: none;
+}
+.menu__dessert--text {
+    display: block;
+    padding-left: 2rem;
+}
 .menu__item-description--dessert {
     font-style: italic;
     color: var(--gray-menu);
@@ -745,94 +607,110 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     margin: 0;
 }
 
-/** footer - begins at Delicious food. Delivered. **/
+/**deli**/
+.menu__img--deli {
+    background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/deli-wine-stl.jpg);
+    background-size: auto 1500px;
+}
+.menu__deli {
+    height: 1550px;
+    display: none;
+}
+.order {
+    grid-row: 2;
+    align-self: center;
+}
+.sandwiches {
+    grid-row: 3;
+}
+.sides {
+    grid-row: 13;
+}
+.desserts {
+    grid-row: 3;
+}
+.provisions {
+    grid-row: 6;
+    grid-column: 2;
+}
 
+
+
+/** footer - begins at Delicious food. Delivered. **/
 .footer {
     max-width: 275px;
     padding: 0;
     margin: .5rem 0;
 }
-
+/**delicious food section**/
 .footer__top {
     margin: auto;
     display: flex;
     justify-content: center;
 }
-
 .footer__top--left {
     display: flex;
     padding: 5rem 5rem 5rem 1rem;
 }
-
 .footer__top--right {
     padding: 5rem 2rem 5rem 5rem;
 }
-
 .footer__logo {
     width: 200px;
     padding-right: 1rem;
 }
-
 .footer__blurb {
     max-width: 275px;
     display: block;
 }
-
 .footer__section--link {
     color: var(--orange);
 }
-
 .footer__section-heading {
     font-size: 1.1rem;
     margin: .8rem 0;
 }
-
+/**laughing guy section**/
 .footer__header-img-container img {
     min-width: 1600px;
 }
 
+/**newsletter section**/
 .footer__icon--top-container {
     display: block;
     margin: auto;
     width: 540px;
     padding-top: 4rem;
 }
-
 .footer__icon {
     color: var(--gray-light2);
     font-size: 1.5rem;
     display: inline-block;
     margin: auto;
 }
-
 .newsletter__container {
     padding: 1rem;
     margin: auto;
 }
-
 .newsletter {
     text-align: center;
 }
-
 .newsletter__heading {
     color: var(--navy);
     margin: 0;
     font-size: 1rem;
 }
-
 .newsletter__subheading {
     color: var(--gray-light2);
     margin: 0;
     font-size: 1rem;
 }
-
 .newsletter__text {
     color: var(--gray-dark);
     font-family: var(--font-heading);
     font-weight: 700;
     margin: .2rem 0 2rem 0;
 }
-
 .email {
     color: var(--gray-email);
     font-family: var(--font-heading);
@@ -845,7 +723,6 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     width: 250px;
     padding-left: .2rem;
 }
-
 .submit {
     color: var(--white);
     font-family: var(--font-heading);
@@ -858,7 +735,6 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     display: inline-block;
     padding: 0 .6rem;
 }
-
 .footer__icon-list {
     display: flex;
     justify-content: space-around;
@@ -875,12 +751,12 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     padding: 2rem;
 }
 
+/**@media**/
 @media screen and (max-width: 1400px) {
     .yum__container {
         right: 550px;
         top: 400px;
     }
-    
     .main-nav {
         left: 15rem;  
     }
@@ -908,7 +784,6 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     .yum__container {
         right: 250px;
     }
-    
     .main-nav {
         left: 7rem;  
     }
@@ -1010,48 +885,55 @@ a .menus__list-active:hover, a .menus__list-item:hover {
         top: 20rem;
         max-width: 200px;
         z-index: 100;
-    
     }
-    
-    .main-nav__logo {
-        padding: 0;
-        max-height: 100px;
-        max-width: auto;
-    }
-    
     .main-nav__list {
-        list-style: none;
         padding: 0;
-        font-family: var(--font-heading);
         font-size: .85rem;
         line-height: 1;
-        text-align: center;
     }
-    
-    .main-nav__list li {
-        display: inline-block;
-        padding: .3rem;
-    }
-
-    .main__heading-block-container {
-        left: 30rem;
+    .menus {
+        display: block;
     }
     .menu__section {
         margin: auto;
+        display: block;
+    }
+    .soups {
+        top: 0;
+        bottom: 0;
+    }
+    .pizzas {
+        top: 0;
+    }
+    .vegetables {
+        top:0;
     }
     .menu__img {
         display: none;
     }
+    .footer__container {
+        display: block;
+        margin-top: 30rem;
+    }
     .footer__top {
         display: block;
+        margin: auto;
+        padding-left: 3rem;
     }
     .footer__top--right {
         padding-top: 0;
+        padding-left: 0;
     }
     .footer__top--left {
         padding-bottom: 0;
-        padding-left: 5rem;
+        padding-left: 0;
         display: block;
+    }
+    .footer__icon--top-container {
+        display: block;
+        margin: auto;
+        width: 17rem;
+        padding-top: 4rem;
     }
 }
 
