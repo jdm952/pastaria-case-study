@@ -670,10 +670,6 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     font-size: 1.1rem;
     margin: .8rem 0;
 }
-/**laughing guy section**/
-.footer__header-img-container img {
-    min-width: 1600px;
-}
 
 /**newsletter section**/
 .footer__icon--top-container {
