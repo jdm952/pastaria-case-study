@@ -534,6 +534,27 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     overflow: hidden;
 }
 
+.menu__structure::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.menu__dessert {
+    height:1269px;
+}
+
+.menu__kids {
+    height:1469px;
+}
+
+.menu__deli {
+    height: 1550px;
+}
+
 .menu__kids--text {
     grid-column: 1;
     grid-row: 3;
@@ -559,24 +580,32 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 
 .menu__img--dinner {
     background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/dinner_stl.jpg);
+    background-size: auto 1867px;
 }
 
 .menu__img--kids {
     background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/kidsmenu.jpg);
+    background-size: auto 1469px;
 }
 
 .menu__img--dessert {
     background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/dessert_stl.jpg);
+    background-size: auto 1269px;
+}
+
+.menu__img--deli {
+    background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/deli-wine-stl.jpg);
+    background-size: auto 1500px;
 }
 
 .menu__img {
     flex-basis: 40%;
     display: block;
-    background-size: auto 1867px;
     background-position: right top;
+    background-repeat: no-repeat;
 }
 
-.menu__img--dinner img, .menu__img--kids img, .menu__img--dessert img {
+.menu__img--dinner img, .menu__img--kids img, .menu__img--dessert img, .menu__img--deli img {
     display: none;
 }
 
@@ -632,6 +661,28 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/gift-cert-orb.png);
     background-repeat: no-repeat;
     margin-left: 3rem; 
+}
+
+.order {
+    grid-row: 2;
+    align-self: center;
+}
+
+.sandwiches {
+    grid-row: 3;
+}
+
+.sides {
+    grid-row: 13;
+}
+
+.desserts {
+    grid-row: 3;
+}
+
+.provisions {
+    grid-row: 6;
+    grid-column: 2;
 }
 
 .menu__dinner-section {
