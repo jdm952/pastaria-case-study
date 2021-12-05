@@ -88,7 +88,7 @@ img {
     margin: 0;
 }
 
-.header__nav-item-gray {
+.header__nav-item--gray {
     color: var(--gray);
     display: inline;
     padding-left: 1rem;
@@ -150,7 +150,7 @@ img {
     background-repeat: no-repeat;
     max-width: 305px;
     padding: 3rem 2rem 1.2rem 2rem;
-    z-index: 1;
+    z-index: 100;
 
 }
 
@@ -252,11 +252,11 @@ img {
 .main__heading-block-container {
     margin-right: 500px;
     display: block;
-    position: absolute;
+    position: relative;
     max-width: fit-content;
-    z-index: 100;
-    bottom: -780px;
-    right: 0px;
+    z-index: 99;
+    top:5rem;
+    left: 45rem;
 }
 
 .main-text {
@@ -318,10 +318,13 @@ img {
     margin: 0;
 }
 
-.noodle {
+.noodle__container {
     margin: auto;
     display: block;
-    padding: 0 25rem 0 15rem;
+    position: relative;
+    left: 30px;
+    bottom: -20px;
+    max-width: 1230px;
 }
 
 .main-bottom__container {
@@ -530,42 +533,42 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     width: 295px;
 }
 
+
 .menu__structure {
     display: flex;
     height: 1867px;
-    position: relative;
     top: -84px;
-    overflow: hidden;
+    position: relative;
+/**    position: absolute;
+    right: 50px;
+    top: -11px;
+    z-index: 10; **/
 }
 
-.menu__dinner {
-    z-index: 1;
-    position: absolute;
-    top:85px;
-    left: 0px;
-    height: 1867px;
-}
-
-.menu__structure::after {
+/** .menu__structure::after {
     visibility: hidden;
     display: block;
+    background-color: var(--white);
     font-size: 0;
     content: " ";
     clear: both;
     height: 0;
-    
 }
+**/
 
 .menu__dessert {
     height:1269px;
+    display: none;
 }
 
 .menu__kids {
     height:1469px;
+    display:none;
 }
 
 .menu__deli {
     height: 1550px;
+    display: none;
 }
 
 .menu__kids--text {
@@ -871,3 +874,184 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     font-size:smaller;
     padding: 2rem;
 }
+
+@media screen and (max-width: 1400px) {
+    .yum__container {
+        right: 550px;
+        top: 400px;
+    }
+    
+    .main-nav {
+        left: 15rem;  
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .yum__container {
+        right: 450px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .yum__container {
+        right: 350px;
+    }
+    .main-nav {
+        left: 10rem;   
+    }
+    .main__heading-block-container {
+        left: 30rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .yum__container {
+        right: 250px;
+    }
+    
+    .main-nav {
+        left: 7rem;  
+    }
+    .main__heading-block-container {
+        left: 25rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .yum__container {
+        right: 150px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .yum__container {
+        display: none;
+    }
+    .main-nav {
+        position: absolute;
+        left: 3rem;
+    }
+    .main__heading-block-container {
+        left: 30rem;
+    }
+    .menu__section {
+        margin: auto;
+    }
+    .menu__img {
+        display: none;
+    }
+    .footer__top {
+        display: block;
+    }
+    .footer__top--right {
+        padding-top: 0;
+    }
+    .footer__top--left {
+        padding-bottom: 0;
+        padding-left: 5rem;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .yum__container {
+        display: none;
+    }
+
+    .main-nav {
+        position: absolute;
+        left: 1rem;
+        top: 7rem;
+    }
+    .main__heading-block-container {
+        left: 30rem;
+    }
+    .menu__section {
+        margin: auto;
+    }
+    .menu__img {
+        display: none;
+    }
+    .footer__top {
+        display: block;
+    }
+    .footer__top--right {
+        padding-top: 0;
+    }
+    .footer__top--left {
+        padding-bottom: 0;
+        padding-left: 5rem;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .yum__container {
+        display: none;
+    }
+    .header__nav {
+        display: block;
+    }
+    .header__nav-item--white {
+        display: none;
+    }
+
+    .main-nav {
+        position: absolute;
+        left: 1rem;
+        top: 7rem;
+    }
+    .main-nav {
+        display: block;
+        background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/logobg.png);
+        background-repeat: no-repeat;
+        background-size: 200px;
+        padding: 0;
+        top: 20rem;
+        max-width: 200px;
+        z-index: 100;
+    
+    }
+    
+    .main-nav__logo {
+        padding: 0;
+        max-height: 100px;
+        max-width: auto;
+    }
+    
+    .main-nav__list {
+        list-style: none;
+        padding: 0;
+        font-family: var(--font-heading);
+        font-size: .85rem;
+        line-height: 1;
+        text-align: center;
+    }
+    
+    .main-nav__list li {
+        display: inline-block;
+        padding: .3rem;
+    }
+
+    .main__heading-block-container {
+        left: 30rem;
+    }
+    .menu__section {
+        margin: auto;
+    }
+    .menu__img {
+        display: none;
+    }
+    .footer__top {
+        display: block;
+    }
+    .footer__top--right {
+        padding-top: 0;
+    }
+    .footer__top--left {
+        padding-bottom: 0;
+        padding-left: 5rem;
+        display: block;
+    }
+}
+
