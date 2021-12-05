@@ -470,6 +470,10 @@ background-color: #717171;
     top: -27px;
 }
 
+.menus {
+    position: relative;
+}
+
 .wood { 
     display: block;
     position: relative;
@@ -534,6 +538,14 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     overflow: hidden;
 }
 
+.menu__dinner {
+    z-index: 1;
+    position: absolute;
+    top:85px;
+    left: 0px;
+    height: 1867px;
+}
+
 .menu__structure::after {
     visibility: hidden;
     display: block;
@@ -541,6 +553,7 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     content: " ";
     clear: both;
     height: 0;
+    
 }
 
 .menu__dessert {
