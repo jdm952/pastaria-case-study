@@ -115,8 +115,8 @@ img {
 }
 .main__container {
     padding-top: 2.5rem;
-    padding-bottom: 30rem;
     display: grid;
+    height: 815px;
     grid-template-columns: 3fr 1fr 1fr 1fr .5fr;
     background: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/head_photo.jpg) no-repeat;
     background-size: cover;
@@ -127,12 +127,11 @@ img {
 }
 .yum__container {
     display: block;
-    height: 108px;
-    width: 265px;
-    padding-left: 150px;
+    max-width: fit-content;
+    height: auto;
     position: relative;
-    bottom: 30rem;
-    margin: auto;
+    left: -180%;
+    top: 16rem;
 }
 .main-nav {
     position: fixed;
@@ -397,10 +396,10 @@ img {
 .menus {
     position: relative;
 }
-.wood { 
+.menus__heading { 
     display: block;
     position: relative;
-    height: 168px;
+    max-height: 168px;
     overflow: hidden;
 }
 
@@ -801,6 +800,9 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     }
     .menus {
         display: block;
+    }
+    .menus__heading {
+        display: none;
     }
     .menus__list {
         letter-spacing: 1px;
