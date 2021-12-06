@@ -362,10 +362,22 @@ img {
     position: relative;
     left: 50%;
     top: -27px;
+    z-index: 46;
 }
 .menus {
     position: relative;
+    top: -87px;
+    z-index: 45;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 }
+
+#dinner, #kids, #desserts, #deli {
+    cursor: pointer;
+    user-select: none;
+}
+
 .menus__heading { 
     display: block;
     position: relative;
@@ -417,26 +429,10 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 }
 .menu__structure {
     display: flex;
-    height: 1867px;
-    top: -84px;
-    position: relative;
-/** Code I was using to flip through the menus, couldn't get it to work---
-    position: absolute;
-    right: 50px;
-    top: -11px;
-    z-index: 10; **/
-}
-
-/** .menu__structure::after {
-    visibility: hidden;
-    display: block;
     background-color: var(--white);
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+    height: 1867px;
+    position: relative;
 }
-**/
 .menu__heading {
     color: var(--gray-black);
     font-size: 1.8rem;
@@ -463,6 +459,11 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 }
 
 /**dinner**/
+.menu__dinner {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 20;
+}
 .menu__img--dinner {
     background-image: url(https://eatpastaria.com/stlouis/wp-content/themes/pastaria/images/dinner_stl.jpg);
     background-size: auto 1867px;
@@ -533,8 +534,10 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     padding-left: 0;
 }
 .menu__kids {
+    grid-row: 1;
+    grid-column: 1;
     height:1469px;
-    display: none;
+    z-index: 19;
 }
 .menu__kids--text {
     grid-column: 1;
@@ -564,7 +567,9 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 }
 .menu__dessert {
     height:1269px;
-    display: none;
+    z-index: 18;
+    grid-column: 1;
+    grid-row: 1;
 }
 .menu__dessert--text {
     display: block;
@@ -584,7 +589,10 @@ a .menus__list-active:hover, a .menus__list-item:hover {
 }
 .menu__deli {
     height: 1550px;
+    z-index: 17;
     display: none;
+    grid-column: 1;
+    grid-row: 1;
 }
 .order {
     grid-row: 2;
@@ -764,9 +772,6 @@ a .menus__list-active:hover, a .menus__list-item:hover {
     }
     .noodle__container {
         display: none;
-    }
-    .menus {
-        display: block;
     }
     .menus__heading {
         display: none;
